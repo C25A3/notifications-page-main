@@ -1,47 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Notifications page</title>
 
-  
+
 </head>
+
 <body>
 
-  <!-- Notifications 3
+  <div class="container">
+    <header class="header">
+      <p class="notifications-number">Notifications <span></span></p>
+      <button class="mark-all-as-read-btn">Mark all as read</button>
+    </header>
+    <main class="notifications-box">
 
-  Mark all as read
+      <div class="notification unread">
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+        <img src="assets/images/avatar-mark-webber.webp" alt="profile image" class="notification__image">
 
-  Angela Gray followed you
-  5m ago
+        <div class="notification__text-box">
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+          <p class="notification__text">
+            <span class="account-name">Mark Webber</span>
+            <span class="notification-action">reacted to your recent post</span>
+            <span class="notification-content">My first tournament today! </span>
+            <span class="notification-dot">•</span>
+          </p>
+          <p class="notification-time">1m ago</p>
+        </div>
+      </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+      <div class="notification unread">
 
-  Kimberly Smith commented on your picture
-  1 week ago
+        <img src="assets/images/avatar-angela-gray.webp" alt="profile image" class="notification__image">
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+        <div class="notification__text-box">
 
-  Anna Kim left the group Chess Club
-  2 weeks ago -->
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+          <p class="notification__text">
+            <span class="account-name">Angela Gray</span>
+            <span class="notification-action">followed you</span>
+            <span class="notification-dot">•</span>
+          </p>
+          <p class="notification-time">5m ago</p>
+        </div>
+      </div>
+      <div class="notification unread">
+
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="profile image" class="notification__image">
+
+        <div class="notification__text-box">
+
+          <p class="notification__text">
+            <span class="account-name">Jacob Thompson</span>
+            <span class="notification-action">has joined your group</span>
+            <span class="group-name">Chess Club</span>
+            <span class="notification-dot">•</span>
+          </p>
+          <p class="notification-time">1 day ago</p>
+        </div>
+      </div>
+      <div class="notification">
+
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="profile image" class="notification__image">
+
+        <div class="notification__text-box">
+
+          <p class="notification__text">
+            <span class="account-name">Rizky Hasanuddin</span>
+            <span class="notification-action">sent you a provate messege</span>
+          </p>
+          <p class="notification-time">5 day ago</p>
+          <p class="notification-message">Hello, thanks for setting up the Chess Club. I've been a member for a few
+            weeks
+            now and
+            I'm already having lots of fun and improving my game.</p>
+        </div>
+      </div>
+      <div class="notification">
+
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="profile image" class="notification__image">
+
+        <div class="notification__text-box">
+
+          <p class="notification__text">
+            <span class="account-name">Kimberly Smith</span>
+            <span class="notification-action">commented on your picture</span>
+          </p>
+          <p class="notification-time">1 week ago</p>
+        </div>
+        <img class="notification-image" src="assets/images/image-chess.webp" alt="Chess">
+      </div>
+      <div class="notification">
+
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="profile image" class="notification__image">
+
+        <div class="notification__text-box">
+          <p class="notification__text">
+            <span class="account-name">Nathan Peterson</span>
+            <span class="notification-action">reacted to your recent post</span>
+            <span class="notification-content">5 end-game strategies to increase your win rate </span>
+          </p>
+          <p class="notification-time">2 week ago</p>
+        </div>
+        <img class="notification-image" src="assets/images/image-chess.webp" alt="Chess">
+      </div>
+      <div class="notification">
+
+        <img src="assets/images/avatar-anna-kim.webp" alt="profile image" class="notification__image">
+
+        <div class="notification__text-box">
+
+          <p class="notification__text">
+            <span class="account-name">Anna Kim</span>
+            <span class="notification-action">left the group</span>
+            <span class="group-name">Chess Club</span>
+          </p>
+          <p class="notification-time">2 week ago</p>
+        </div>
+        <img class="notification-image" src="assets/images/image-chess.webp" alt="Chess">
+      </div>
+
+    </main>
+  </div>
+
+
+
+
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>

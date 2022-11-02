@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 1.5em;
+
+	.notifications-number {
+		font-weight: 800;
+		font-size: 1.75rem;
+
+		span {
+			margin-left: 0.25em;
+			padding: 0.1em 0.7em;
+			border-radius: 8px;
+			background-color: hsl(219, 33%, 34%);
+			color: #fff;
+		}
+	}
+
+	.mark-all-as-read-btn {
+		background: none;
+		border: none;
+		color: hsl(224, 23%, 41%);
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+}
+
+.unread {
+	background-color: hsl(210, 50%, 98%);
+}
+
+.notifications-box {
+	.notification {
+		display: flex;
+		margin: 1em;
+		padding: 1em;
+
+		border-radius: 8px;
+
+		&__image {
+			margin: 1em;
+			width: 40px;
+			height: 40px;
+		}
+
+		&__text-box {
+			font-size: 1.4rem;
+		}
+
+		&__text {
+			padding: 1em;
+			padding-bottom: 0.3em;
+		}
+
+		.account-name,
+		.notification-action {
+			margin-right: 0.1em;
+		}
+
+		.account-name {
+			font-weight: 800;
+		}
+
+		.notification-content {
+			font-weight: 800;
+			color: hsl(219, 33%, 34%);
+		}
+
+		.notification-time {
+			padding: 0 1em;
+			color: rgb(177, 177, 177);
+		}
+
+		.notification-message {
+			margin: 1em;
+			border: 1px solid rgb(219, 219, 219);
+			padding: 1em;
+			margin-top: 1em;
+		}
+
+		.group-name {
+			font-weight: 800;
+			color: hsl(219, 85%, 26%);
+		}
+
+		.notification-dot {
+			color: hsl(1, 90%, 64%);
+			font-weight: 800;
+		}
+
+		.notification-image {
+			margin-top: 1em;
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+
+@media (min-width: 1250px) {
+	body {
+		background-color: hsl(210, 50%, 98%);
+	}
+
+	.header {
+		padding: 2em 2.5em;
+		.notifications-number {
+			font-size: 2rem;
+		}
+	}
+
+	.container {
+		border-radius: 8px;
+		max-width: 50vw;
+		background-color: #fff;
+	}
+}

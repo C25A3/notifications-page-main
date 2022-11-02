@@ -1,1 +1,132 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 1.5em;
+}
+.header .notifications-number {
+  font-weight: 800;
+  font-size: 1.75rem;
+}
+.header .notifications-number span {
+  margin-left: 0.25em;
+  padding: 0.1em 0.7em;
+  border-radius: 8px;
+  background-color: hsl(219deg, 33%, 34%);
+  color: #fff;
+}
+.header .mark-all-as-read-btn {
+  background: none;
+  border: none;
+  color: hsl(224deg, 23%, 41%);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.unread {
+  background-color: hsl(210deg, 50%, 98%);
+}
+
+.notifications-box .notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 8px;
+}
+.notifications-box .notification__image {
+  margin: 1em;
+  width: 40px;
+  height: 40px;
+}
+.notifications-box .notification__text-box {
+  font-size: 1.4rem;
+}
+.notifications-box .notification__text {
+  padding: 1em;
+  padding-bottom: 0.3em;
+}
+.notifications-box .notification .account-name,
+.notifications-box .notification .notification-action {
+  margin-right: 0.1em;
+}
+.notifications-box .notification .account-name {
+  font-weight: 800;
+}
+.notifications-box .notification .notification-content {
+  font-weight: 800;
+  color: hsl(219deg, 33%, 34%);
+}
+.notifications-box .notification .notification-time {
+  padding: 0 1em;
+  color: rgb(177, 177, 177);
+}
+.notifications-box .notification .notification-message {
+  margin: 1em;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 1em;
+  margin-top: 1em;
+}
+.notifications-box .notification .group-name {
+  font-weight: 800;
+  color: hsl(219deg, 85%, 26%);
+}
+.notifications-box .notification .notification-dot {
+  color: hsl(1deg, 90%, 64%);
+  font-weight: 800;
+}
+.notifications-box .notification .notification-image {
+  margin-top: 1em;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 1250px) {
+  body {
+    background-color: hsl(210deg, 50%, 98%);
+  }
+  .header {
+    padding: 2em 2.5em;
+  }
+  .header .notifications-number {
+    font-size: 2rem;
+  }
+  .container {
+    border-radius: 8px;
+    max-width: 50vw;
+    background-color: #fff;
+  }
+}/*# sourceMappingURL=style.css.map */
